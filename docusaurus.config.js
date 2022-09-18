@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'NeatTeamKnowledge',
   tagline: 'Welcome to the NeaTeam #1943 library!',
-  url: 'https://neatteam1943.com',
-  baseUrl: '/',
+  url: 'https://neatteam1943.github.io',
+  baseUrl: '/NeatTeamKnowledge/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
@@ -58,6 +58,7 @@ const config = {
     ({
       navbar: {
         title: 'NeatTeamKnowledge',
+        hideOnScroll: true,
         logo: {
           alt: 'NeatTeam #1943 Logo',
           src: 'img/logo.svg',
@@ -65,7 +66,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'library/intro',
             position: 'left',
             label: 'Docs',
           },
@@ -74,26 +75,27 @@ const config = {
             label: 'Blog',
             position: 'left'
           },
+          {
+            type: 'doc',
+            docId: 'contrib/getting-started',
+            position: 'left',
+            label: 'Contribute'
+          }
         ],
       },
       footer: {
         style: 'dark',
-        // logo: {
-        //   alt: 'NeatTeam #1943 Logo',
-        //   src: 'img/logo-name.svg',
-        //   href: 'https://neatteam1943.com'
-        // },
         links: [
           {
-            title: 'Website',
+            title: 'Our Website',
             items: [
               {
-                html: '<a class="footer-logo-name" href="https://neatteam1943.com"><img src="/img/logo-name.svg"/></a>'
+                html: '<a class="footer-logo-name" href="https://neatteam1943.com"><img src="./img/logo-name.svg"/></a>'
               }
             ]
           },
           {
-            title: 'Community',
+            title: 'Useful Links',
             items: [
               {
                 label: 'Instagram',
@@ -106,6 +108,23 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/NeatTeam1943',
+              }
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                to: 'docs/library/intro',
+                label: 'Docs',
+              },
+              {
+                to: 'blog/',
+                label: 'Blog',
+              },
+              {
+                to: 'docs/contrib/getting-started',
+                label: 'Contribute',
               }
             ],
           },
@@ -131,6 +150,12 @@ const config = {
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true
+        }
       }
     }),
 };
