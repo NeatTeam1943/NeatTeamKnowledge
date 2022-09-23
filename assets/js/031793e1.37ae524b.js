@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkneat_team_knowledge=self.webpackChunkneat_team_knowledge||[]).push([[633],{2511:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/blog/tags/facebook","allTagsPath":"/blog/tags","count":1}')}}]);
