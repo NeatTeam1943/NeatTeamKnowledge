@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneat_team_knowledge=self.webpackChunkneat_team_knowledge||[]).push([[720],{7557:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/NeatTeamKnowledge/blog/tags/hola","allTagsPath":"/NeatTeamKnowledge/blog/tags","count":1}')}}]);

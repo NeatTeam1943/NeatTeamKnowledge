@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkneat_team_knowledge=self.webpackChunkneat_team_knowledge||[]).push([[589],{6329:e=>{e.exports=JSON.parse('{"permalink":"/NeatTeamKnowledge/blog/tags/hola","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
