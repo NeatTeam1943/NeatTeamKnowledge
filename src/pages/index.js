@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/library/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            To The Library 📖
           </Link>
         </div>
       </div>
@@ -34,7 +34,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
       </main>
     </Layout>
   );
