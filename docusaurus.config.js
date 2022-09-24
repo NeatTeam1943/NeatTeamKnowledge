@@ -6,18 +6,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'NeatTeamKnowledge',
+  tagline: 'Welcome to the NeaTeam #1943 library!',
+  url: 'https://neatteam1943.github.io',
+  baseUrl: '/NeatTeamKnowledge/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'NeatTeam1943', // Usually your GitHub org/user name.
+  projectName: 'NeatTeamKnowledge', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -37,14 +37,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/NeatTeam1943/NeatTeamKnowledge/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/NeatTeam1943/NeatTeamKnowledge/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,75 +57,106 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'NeatTeamKnowledge',
+        hideOnScroll: true,
         logo: {
-          alt: 'My Site Logo',
+          alt: 'NeatTeam #1943 Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'library/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
           },
+          {
+            type: 'doc',
+            docId: 'contrib/getting-started',
+            position: 'left',
+            label: 'Contribute'
+          }
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Our Website',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+                html: '<a class="footer-logo-name" href="https://neatteam1943.com"><img src="./img/logo-name.svg"/></a>'
+              }
+            ]
           },
           {
-            title: 'Community',
+            title: 'Useful Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Instagram',
+                href: 'https://www.instagram.com/neatteam_1943',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Facebook',
+                href: 'https://www.facebook.com/NeatTeam1943',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'GitHub',
+                href: 'https://github.com/NeatTeam1943',
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                to: 'docs/library/intro',
+                label: 'Docs',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                to: 'blog/',
+                label: 'Blog',
               },
+              {
+                to: 'docs/contrib/getting-started',
+                label: 'Contribute',
+              }
             ],
           },
+          {
+            title: 'Contact Us',
+            items: [
+              {
+                label: 'Team Captain: +972-50-0000000',
+                href: 'tel:+972500000000',
+              },
+              {
+                html: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1690.0968723671167!2d34.952938!3d32.091049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d312c8ecdda1f%3A0x693a89ad6c7b2751!2zMzLCsDA1JzI4LjIiTiAzNMKwNTcnMTEuMCJF!5e0!3m2!1sen!2sil!4v1663430218391!5m2!1sen!2sil" width="300" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+              }
+            ],
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NeatTeam #1943. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: true
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true
+        }
+      }
     }),
 };
 
