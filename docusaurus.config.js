@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'NeatTeamKnowledge',
-  tagline: 'Welcome to the NeaTeam #1943 library!',
+  title: 'Neat Team #1943',
+  tagline: 'FRC team from Rosh HaAyin, Israel',
   url: 'https://neatteam1943.github.io',
   baseUrl: '/NeatTeamKnowledge/',
   onBrokenLinks: 'throw',
@@ -50,7 +50,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'NeatTeamKnowledge',
+        title: 'Neat Team #1943',
         hideOnScroll: true,
         logo: {
           alt: 'NeatTeam #1943 Logo',
@@ -61,21 +61,13 @@ const config = {
             type: 'doc',
             docId: 'library/intro',
             position: 'left',
-            label: 'Docs',
+            label: 'Knowledge',
           },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Our Website',
-            items: [
-              {
-                html: '<a class="footer-logo-name" href="https://neatteam1943.com"><img src="./img/logo-name.svg"/></a>'
-              }
-            ]
-          },
           {
             title: 'Useful Links',
             items: [
@@ -98,7 +90,7 @@ const config = {
             items: [
               {
                 to: 'docs/library/intro',
-                label: 'Docs',
+                label: 'Knowledge',
               },
             ],
           },
@@ -115,7 +107,13 @@ const config = {
             ],
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} NeatTeam #1943. Built with Docusaurus.`,
+        logo: {
+          alt: "Neat Team #1943 Logo",
+          src: "img/logo-name.svg",
+          href: "/",
+          height: 120
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} Neat Team #1943. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -127,7 +125,7 @@ const config = {
       },
       docs: {
         sidebar: {
-          hideable: true,
+          hideable: false,
           autoCollapseCategories: true
         }
       }
