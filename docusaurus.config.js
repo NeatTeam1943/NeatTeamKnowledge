@@ -74,12 +74,6 @@ const config = {
             to: '/blog',
             label: 'Blog',
             position: 'left'
-          },
-          {
-            type: 'doc',
-            docId: 'contrib/getting-started',
-            position: 'left',
-            label: 'Contribute'
           }
         ],
       },
@@ -121,10 +115,6 @@ const config = {
               {
                 to: 'blog/',
                 label: 'Blog',
-              },
-              {
-                to: 'docs/contrib/getting-started',
-                label: 'Contribute',
               }
             ],
           },

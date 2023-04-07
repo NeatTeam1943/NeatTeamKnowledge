@@ -29,9 +29,6 @@ $ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server. Doing this will allow you to see the docs locally and view any changes made to existing docs or any new docs that were added.
 
-## RTFM
-The docs contain a contributing section with guided instruction on how to add documentation and enhance the library!
-
 ## Build
 
 ```
