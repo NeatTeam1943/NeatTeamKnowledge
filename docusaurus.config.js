@@ -63,6 +63,12 @@ const config = {
             position: 'left',
             label: 'Knowledge',
           },
+          {
+            type: 'doc',
+            docId: 'contact-us',
+            position: 'right',
+            label: 'Contact Us'
+          },
         ],
       },
       footer: {
@@ -92,20 +98,12 @@ const config = {
                 to: 'docs/library/intro',
                 label: 'Knowledge',
               },
+              {
+                to: 'docs/contact-us',
+                label: 'Contact Us',
+              },
             ],
           },
-          {
-            title: 'Contact Us',
-            items: [
-              {
-                label: 'Team Captain: +972-50-0000000',
-                href: 'tel:+972500000000',
-              },
-              {
-                html: '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1690.0968723671167!2d34.952938!3d32.091049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d312c8ecdda1f%3A0x693a89ad6c7b2751!2zMzLCsDA1JzI4LjIiTiAzNMKwNTcnMTEuMCJF!5e0!3m2!1sen!2sil!4v1663430218391!5m2!1sen!2sil" width="300" height="200" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-              }
-            ],
-          }
         ],
         logo: {
           alt: "Neat Team #1943 Logo",
