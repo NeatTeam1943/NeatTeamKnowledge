@@ -42,3 +42,9 @@
 .footer-logo-name img {
   padding-right: 20%;
 }
+
+@media (max-width: 1000px) {
+  .footer__links {
+    display: none;
+  }
+}
