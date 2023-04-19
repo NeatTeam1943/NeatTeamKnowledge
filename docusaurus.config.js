@@ -132,7 +132,7 @@ const config = {
       },
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: true
         }
       }
