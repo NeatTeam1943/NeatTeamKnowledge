@@ -62,10 +62,15 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'library/intro',
             position: 'left',
             label: 'Knowledge',
+            items: [
+              {
+                type: 'doc',
+                docId: 'software-electronics/overview',
+                label: 'Software / Electronics',
+              },
+            ]
           },
           {
             type: 'doc',
@@ -99,8 +104,8 @@ const config = {
             title: 'More',
             items: [
               {
-                to: 'docs/library/intro',
-                label: 'Knowledge',
+                to: 'docs/software-electronics/overview',
+                label: 'Software / Electronics',
               },
               {
                 to: 'docs/contact-us',
@@ -127,7 +132,7 @@ const config = {
       },
       docs: {
         sidebar: {
-          hideable: false,
+          hideable: true,
           autoCollapseCategories: true
         }
       }
